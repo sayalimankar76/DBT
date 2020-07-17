@@ -1,0 +1,68 @@
+create database exercise1;
+use exercise;
+
+
+create table SEMP(EMPNO char(4),EMPNAME CHAR(20),BASIC FLOAT(9,2),DEPTNO CHAR(2),DEPTHEAD CHAR(4));
+
+insert into SEMP values('0001','SUNIL','6000','10',NULL),
+('0002','HIREN','8000','20',NULL),
+('0003','ALI','4000','10','0001'),
+('0004','GEORGE','6000',NULL,'0002');
+
+--------------------------------------------------------------------------
+
+create table SDEPT(DEPTNO Char(2),DEPTNAME Char(15));
+
+insert into SDEPT values('10','Development'),('20','Training');
+
+--------------------------------------------------------------------------
+
+
+create table SUPPLIER(`S#` varchar(10),Sname varchar(50),Status int(4),City varchar(30));
+
+insert into Supplier values('S1','Sayali','10','London'),
+('S2','Shubham','20','Paris'),
+('S3','Rucha','30','Athens');
+
+---------------------------------------------------------------------------------------------------------------
+
+create table PARTS(`P#` varchar(10),Pname varchar(20),Color varchar(20),Weight int(4),City varchar(10));
+
+insert into Parts values('P1','Clutch','Black',12,'London'),
+('P2','Clutch','Red',18,'Paris'),
+('P3','Nutbol','Blue',14,'Athens');
+
+------------------------------------------------------------------------------------------------------------------
+
+
+create table PROJECTS(`J#` varchar(10),Jname varchar(10),City varchar(10));
+
+insert into projects values('J1','shopping','athens'),
+('J2','ola_book','London'),
+('J3','movie_book','Paris'),
+('J4','movie_book','London');
+
+----------------------------------------------------------------------------------------------------------------
+
+create table SPJ(`S#` varchar(10),`P#` varchar(10),`J#` varchar(10),Qty int(10));
+
+-----------------------------------------------------------------------------------------------------------
+
+5. select *from SUPPLIER;
+6. select 'S#',SNAME from SUPPLIER;
+7.select PNAME,COLOR from PARTS where City='London';
+8.select *from SUPPLIER where City='London';
+9.select *from SUPPLIER where City='Paries' OR 'London';
+10.select *from PROJECTS where City='Athens';
+11.select Pname from PARTS where Weight between 12 and 14;
+12.select Sname from supplier where status>=20;
+13. select * from supplier where not city="London";
+14. select city from supplier;
+15. select `P#`,Pname,color,weight/1000.0,city from parts;
+      select `P#`,Pname,color,weight*1000,city from parts;
+
+
+
+
+
+
