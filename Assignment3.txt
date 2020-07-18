@@ -1,0 +1,13 @@
+﻿ASSIGNMENT 3:
+
+Overview of sql:
+
+1) Does ANSI recognize the data type DATE? 
+--->Yes,date complies with the ANSI SQL standard definition for the Gregorian calendar: 
+" Datetime data types will allow dates in the Gregorian format to be stored in the date range 0001-01-01 CE through 9999-12-31 CE."
+The default string literal format, which is used for down-level clients, complies with the SQL standard form that is defined as YYYY-MM-DD.
+This format is the same as the ISO 8601 definition for DATE.
+
+ 2) Which subdivision of SQL is used to insert values in tables? 
+--->DML(data manipulation language)subdivision is used to insert values in table..
+Insert into table_name Values(value1,value2);
