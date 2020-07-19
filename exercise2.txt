@@ -1,0 +1,15 @@
+EXERCISE 2:
+
+1) SELECT *from Supplier ORDER BY City desc;
+
+2)SELECT * from parts ORDER BY Pname;
+
+3)SELECT * from parts where Status BETWEEN 10 and 20;
+
+4)SELECT *from parts WHERE Weight NOT BETWEEN 10 and 15;
+
+5)SELECT * from parts where Pname LIKE 'S%';
+
+6)SELECT *from suppliers where City LIKE 'L%';
+
+7)SELECT *from projects where Jname LIKE '__n%';

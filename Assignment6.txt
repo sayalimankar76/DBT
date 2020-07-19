@@ -1,0 +1,25 @@
+ASSIGNMENT 6
+
+Using special operators inconditions.
+
+1) select *from orders where Odate IN('1990-10-03, '1990-10-04');
+		
+			OR
+
+    select *from orders where Odate='1990-10-03 OR Odate='1990-10-03';
+
+
+2) select *from salespeople where Sname='Peel' or Sname='Motika';
+
+
+3)select *from customers where Cname like  'A%' or Cname like  'B%'  or Cname like  'C%'  or Cname like  'D%'  or Cname like  'E%'  
+   or Cname like  'F%'  or Cname like  'G%'  or Cname like  'H%' ; 
+
+
+4)select *from customers where Cname like 'C%'; 
+
+5)select *from orders where  Amt not NULL and Amt not  0;
+			
+			OR
+
+   select *from orders where Amt <> 0 AND Amt <> Null;
