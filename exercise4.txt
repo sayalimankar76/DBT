@@ -33,4 +33,4 @@ when status=40 then 'fourty'
 when status=50 then 'fifty'
 else 'others'
 end result
-,count(*) from supplier group by status;
+,count(status) from supplier group by status;
