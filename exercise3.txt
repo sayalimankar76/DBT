@@ -1,0 +1,36 @@
+EXERCISE 3:
+
+1) select CONCAT(UPPER(SUBSTR(Sname,1,1)),LOWER(SUBSTR(Sname,2))) as Sname from supplier;
+
+2)select UPPER(Sname) from supplier;
+
+3)select LOWER(Sname) from supplier;
+
+4)select LPAD(Sname, 25,  ' ')  as "Sname" from supplier;
+
+5)select REPLACE(Sname,'la','ro') as "Sname" from supplier;
+
+6)select REPLACE((REPLACE(Sname,'a','o')),'l','o') as "Sname" from supplier;
+
+7)select Sname, lengh(Sname) as length from supplier;
+
+8)select Sname from supplier where soundex(Sname)=soundex('aarya');
+
+9)
+select case
+when status=10 then 'Ten'
+when status=20 then 'Twenty'
+when status=30 then 'Thirty'
+when status=40 then 'fourty'
+when status=50 then 'fifty'
+else 'other'
+end result
+,Sname from supplier;
+
+
+
+10)select dayname(now()) from dual;
+		
+		OR
+
+    select dayname(curdate()) from dual;

@@ -1,0 +1,9 @@
+Assignment 8:
+
+1) select onum, snum, .12 *amt as '12% of amt' from orders;
+
+2) select city as 'for thecity', max(rating) as 'the highest rating is:' from customers group by city;
+
+3) select  rating, cname, cnum from customers order by rating desc;
+
+4) select sum(amt),odate from orders group by odate;

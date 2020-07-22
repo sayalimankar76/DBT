@@ -1,0 +1,36 @@
+EXERCISE 4:
+
+1)select min(status) from supplier;
+
+2)select max(weight) from parts;
+
+3)select avg(weight) from parts;
+
+4) select sum(qty) from spj where 'p#'='p1';
+
+5)select 'p#', sum(qty) from spj group by 'p#';
+
+6)select 'p#', avg(qty) from spj group by 'p#';
+
+7)select 'p#', max(qty) from spj where qty>800 group by 'p#';
+
+8)select status, count(status) from supplier group by status;
+
+9)select city, count(jname) from project group by city;
+
+10) COUNT(Status) :: count the entries in a column egnoring null        values.
+
+       COUNT(*) :: count the total rows in your table.
+
+
+11) 
+
+select case
+when status=10 then 'Ten'
+when status=20 then 'Twenty'
+when status=30 then 'Thirty'
+when status=40 then 'fourty'
+when status=50 then 'fifty'
+else 'others'
+end result
+,count(*) from supplier group by status;
