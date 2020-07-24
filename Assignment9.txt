@@ -1,0 +1,9 @@
+Assignment :9
+
+1) select Onum, cname from orders, customers where orders.cnum=customers.cnum;
+
+2) select onum, cname, sname from orders, customers, salespeople where customers.cnum=orders.cnum and salespeople.snum=orders.snum;
+
+3)select cname, sname, comm*100 from customers, salespeople where customers.snum=salespeople.snum having comm>0.12;
+
+4) select amt,comm from salespeople, customers, orders where orders.snum=customers.snum and customers.snum=salespeople.snum and rating > 100;
