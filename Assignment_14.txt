@@ -1,0 +1,20 @@
+Assignment 14
+
+1) create table salespeople2 as select city,sname,comm,snum from     salespeople;
+
+
+    Drop table salespeople;
+
+
+    rename table salespeople2 to salespeople;
+
+
+    Insert into salespeople(city,sname,comm,snum)
+values('san         jose','blanco',NULL,1100);
+
+
+2)delete from orders where cnum = (select cnum from customers where cname='Clemens');
+
+3) update customers set rating=rating + 100 where city='Rome';
+
+4) update customers set snum='1004' where snum='1002'; 

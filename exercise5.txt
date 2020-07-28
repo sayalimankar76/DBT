@@ -1,0 +1,23 @@
+Exercise 5:
+
+1)select sname, qty from supplier, spj where supplier.`S#`=spj.`S#`;
+
+2)select pname, qty from parts, spj where parts.`P#`=spj.`P#`;
+
+3) select jname, qty from projects, spj where projects.`J#`=spj.`J#`;
+
+4) select sname, pname, jname, qty from supplier,projects,parts, spj where supplier.`S#`=spj.`S#`  and parts.`P#`=spj.`P#` and projects.`J#`=spj.`J#`;
+
+5)select sname,pname, supplier, projects where supplier.city= project.city;
+
+6) select pname, color, qty from parts,spj where color='Red' and parts.`P#`=spj.`P#`;
+
+7) select sname,qty from supplier,spj where status='20' and supplier.`S#`=spj.`S#`; 
+
+8)select pname, qty from parts, spj where  spj.`P#' = parts.`P#` and weight > '14' ;
+
+9)select jname, city from project,spj where project.`J#`=spj.`J#` and qty>500;
+
+10) select pname,qty from parts, spj where weight<'15' AND parts.`P#`=spj.`P#`;
+
+11)select b.ename as employee, a.ename as manager from emp a, emp b where b.mgr = a.empno;

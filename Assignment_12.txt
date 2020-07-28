@@ -1,0 +1,9 @@
+Assignment 12:
+
+1) select *from customers where rating>= ANY(select rating from customers where snum IN (select snum from salespeople where sname='Serres'));
+
+2)select *from salespeople where city!= all (select city from customers);
+
+3)select *from orders where Amt > ANY(select cnum from customers where city='London')
+
+4)select *from orders where amt>(select min(amt) from customers natural join orders where city='london');
