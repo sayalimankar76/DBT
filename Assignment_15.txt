@@ -1,0 +1,8 @@
+Assignment 15:
+
+1) create table multicust as select *from salespeople where snum IN     (select snum from customers group by snum having count(snum)>1);
+     
+2)  insert into customers values(2010, 'palak', 'amt', 400, 1008);
+     delete from customers where cnum NOT IN (select cnum from      orders);
+
+3) update salespeople set comm = comm * 0.2 where snum = (select     snum from orders group by snum having sum(amt)>3000);
