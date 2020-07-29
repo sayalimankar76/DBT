@@ -1,0 +1,9 @@
+Assignment 16:
+
+1) create INDEX  i_orders_odate ON orders(odate); 
+
+2) ALTER table orders add PRIMARY KEY(onum);
+
+3) Create Index o_date ON orders(odate);
+
+4) ALTER table customers add PRIMARY KEY(rating);
