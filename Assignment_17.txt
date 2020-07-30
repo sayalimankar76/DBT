@@ -1,0 +1,40 @@
+Assignment 17:
+
+1) create table orders1
+    (
+     onum int(4) ,
+     Amt varchar(10),
+     cnum int(4),
+     snum int(4),
+     odate date NOT NULL,
+     PRIMARY KEY(onum, cnum, snum)); 
+
+2) create table salespeople1
+     (
+     snum int(4) primary key,
+     sname varchar(15) check(substr(upper(sname),1,1) BETWEEN 'A'      and 'M'),
+     city varchar(15),
+     comm float(7,2) default 10
+     )
+
+3) create table orders3
+    (
+     onum int(4) check(onum>cnum),
+     cnum int(4) check(cnum>snum),
+     snum int(4)
+     );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     

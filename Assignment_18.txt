@@ -1,0 +1,14 @@
+Assignmnt 18:
+
+1) create table cityorders as select onum, amt, orders.snum,     customers.cnum, customers.city from orders, customers where         customers.cnum=orders.cnum;
+
+
+     Alter table cityorders  ADD CONSTRAINT fk foreign key(onum)         references order(onum);
+
+
+2) alter table orders add column prev int(4);
+    
+    alter table orders add constraint 
+   fk_prev foreign key(prev) references orders(onum);
+
+   
